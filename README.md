@@ -47,6 +47,18 @@ Keep those in mind as we go through the options.
 
 ## The Firecrawl Alternatives Worth Considering in 2026
 
+### Context.dev — Best for Agents That Need Search, Scraping, and Structured Output
+
+Context.dev combines live web search with single-page scraping, site crawling, JSON Schema extraction, document parsing, website monitoring, and asynchronous batch jobs. It can return Markdown, raw HTML, screenshots, images, or schema-shaped JSON, and it also exposes the same capabilities through a hosted OAuth MCP server.
+
+Its pricing is credit based: a successful page scrape costs 1 credit, a site crawl costs 1 credit per page, and a structured extraction costs 10 credits per call. The free tier includes a one-time credit allocation, while paid plans start at $25 per month for 10,000 credits.
+
+**Best for**: AI-agent and RAG teams that want search, web ingestion, typed extraction, monitoring, and batches behind one API.
+
+**Watch out for**: It is a managed API rather than a self-hosted crawler, and the credit cost varies by endpoint, so estimate mixed workloads before choosing a plan.
+
+---
+
 ### Apify — Best for Managing Many Different Scraping Projects
 
 Apify is the platform you grow into. It revolves around "Actors" — pre-packaged, reusable scraping programs that handle everything from crawling a specific website to running browser automation at scale. There's a marketplace with thousands of pre-built Actors, which means you're often adapting existing logic rather than building from scratch.
