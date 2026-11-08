@@ -47,6 +47,18 @@ Keep those in mind as we go through the options.
 
 ## The Firecrawl Alternatives Worth Considering in 2026
 
+### x402 Scraper Engine — Best for Autonomous AI Agents and Micro-Settled Edge Scraping
+
+[x402 Scraper Engine](https://github.com/ami-guru/x402-scraper-engine) is an edge-native web reader, multi-page crawler, and document parser built specifically for autonomous AI agents and developer workflows. It runs across Cloudflare's global edge network, converting noisy URLs, deep documentation sites, and PDFs into pristine, token-efficient Markdown without requiring Python Playwright or heavy Docker container infrastructure.
+
+Instead of locking developers into $50–$99/month recurring subscriptions or requiring human credit cards/KYC, it operates on a permissionless, pay-per-call **HTTP 402 protocol on Base L2 mainnet**. A free 2-call grace tier per IP enables instant dry-runs and schema verification before settling micropayments in canonical USDC (`0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913`). Single-page edge markdown reads cost 0.005 USDC ($0.005), recursive multi-page documentation crawls cost 0.250 USDC ($0.250), and direct PDF/whitepaper extraction costs 0.050 USDC ($0.050). It also features an official MCP server for Claude Code, Cursor, and Windsurf (`npx -y github:ami-guru/x402-scraper-engine`).
+
+**Best for**: Autonomous AI agent loops, CLI tools, and developers who need instant edge Markdown conversion, deep documentation crawling, or PDF extraction without monthly subscription lock-in or human KYC.
+
+**Watch out for**: It settles pay-per-call micropayments via Base L2 USDC (or uses the free grace tier) rather than traditional credit-card invoices.
+
+---
+
 ### Apify — Best for Managing Many Different Scraping Projects
 
 Apify is the platform you grow into. It revolves around "Actors" — pre-packaged, reusable scraping programs that handle everything from crawling a specific website to running browser automation at scale. There's a marketplace with thousands of pre-built Actors, which means you're often adapting existing logic rather than building from scratch.
